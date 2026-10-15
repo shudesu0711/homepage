@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>私の学習記録</title>
+    <style>
+        /*通常の色*/
+        body{
+            font-family: sans-serif;/*ゴシック体のフォント*/
+            max-width: 600px;/*最大幅を600pxに設定(ノートパソコンは基本的に1300から1600px)*/
+            margin: 40px auto;/*中央寄せ*/
+            padding: 30px;/*余白*/
+            background-color: #ffffff;/*背景色：白*/
+            color: #333333;/*文字色：黒っぽいグレー*/
+            border-radius: 8px;/*角を丸くする*/
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);/*影を追加*/
+        }
+
+        /*darkモードの色*/
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;/*背景色：暗いグレー*/
+                color: #f0f0f0;/*文字色：白っぽいグレー*/
+            }
+            a {/*リンクの色：明るい青*/
+                color: #8ab4f8;/*リンクの色：明るい青*/
+            }
+        }
+        /*おしゃれ*/
+        h2{
+            border-left: 5px solid #4a90e2;/*左側に青い線を追加*/
+            padding-left: 10px;/*左側の余白を追加(線と文字の間に少し隙間を空ける)*/
+            margin-top: 30px;/*上の余白を追加*/
+        }
+        /*リンクの装飾*/
+        ul{
+            padding-left: 0px;/*リストの左側の余白をなくす*/
+            list-style-type: none;/*リストのマーカーを消す*/
+        }
+        ul li a{
+            display:block;/*リンクをブロック要素にすることで、クリックしやすくする*/
+            padding: 10px 15px;/*リンクの上下左右に余白を追加*/
+            background-color: #f0f0f0;/*リンクの背景色を薄いグレーにする*/
+            color: #333333;/*リンクの文字色を黒っぽいグレーにする*/
+            text-decoration: none;/*リンクの下線を消す*/
+            border-radius: 5px;/*リンクの角を丸くする*/
+            margin-top: 8px;/*リンクの上に少し余白を追加*/
+        }
+        @media (prefers-color-scheme: dark) {
+            ul li a{
+                background-color: #2a2a2a;/*リンクの背景色を暗いグレーにする*/
+                color: #f0f0f0;/*リンクの文字色を白っぽいグレーにする*/
+            }
+        }
+
+    </style>
 </head>
 <body>
     <h1>私のプログラミング学習記録</h1>
     <p>今日からホームページを作って勉強を記録していきます！</p>
+    <h2>学習内容</h2>
+    <ul>
+        <li>HTMLの基本</li>
+        <li>CSSの基本</li>
+        <li>JavaScriptの基本</li>
+    </ul>
+    <h2>学習の目標</h2>
+    <p>毎日少しずつでも学習を続け、最終的には自分のウェブサイトを作れるようになることが目標です。</p>
+    <h2>制作物 </h2>
+    <ul>
+        <li><a href="https://shudesu0711.github.io/homepage/">ホームページ</a></li>
+    </ul>
+    <h2>学習ログ</h2>
+        <p>2026/10/16：簡単なホームページを実際に作ることで学んでいる</p>
 </body>
 </html>
